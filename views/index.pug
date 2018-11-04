@@ -1,7 +1,27 @@
 extends ./layouts/default 
 
 block content
-	.weather
-		span 2018年11月14日
-		br
-		span 苏州市 阴睛之间 谨防些外线侵扰
+	.ui.container
+		.ui.center.aligned.segment
+			span 2018年11月14日
+		.ui.center.aligned.segment
+			span 苏州市 阴睛之间 谨防些外线侵扰
+		.ui.form
+			.inline.field
+				label 姓名：
+				input(type="text" placeholder="填写姓名")
+			.inline.field
+				label 姓名：
+				select.ui.search.dropdown
+					option(value="A") 第一个选项
+					option(value="B") 第二个选项
+			.inline.fields
+				label 出生地点：
+				.six.wide.field
+					select.ui.search.dropdown
+						option(value="A") 第一个选项
+						option(value="B") 第二个选项
+				.three.wide.field
+					select.ui.search.dropdown
+						option(value="A") 第一个选项
+						option(value="B") 第二个选项
